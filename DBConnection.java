@@ -27,8 +27,8 @@ public class DBConnection {
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/musicstreamingdb1",
-                "root",
-                "root123"
+                "user_name",
+                "your_password"
         );
     }
 
@@ -53,6 +53,7 @@ public class DBConnection {
         return null; // user not found
     }
 }
+
 
 
 
