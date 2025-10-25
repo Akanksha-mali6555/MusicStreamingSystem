@@ -3,8 +3,8 @@ import java.sql.*;
 
 public class DBConnection {
     private static final String URL = "jdbc:mysql://localhost:3306/musicstreamingdb1";
-    private static final String USER = "root"; // change if needed
-    private static final String PASSWORD = "root123"; // your MySQL password
+    private static final String USER = "your_user name"; // change if needed
+    private static final String PASSWORD = "Yourpassword"; // your MySQL password
 
     public static Connection getConnection() {
         try {
@@ -53,5 +53,6 @@ public class DBConnection {
         return null; // user not found
     }
 }
+
 
 
